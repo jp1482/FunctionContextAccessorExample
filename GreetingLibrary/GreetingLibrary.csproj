@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionContextAccessor\FunctionContextAccessor.csproj" />
+  </ItemGroup>
+
 </Project>

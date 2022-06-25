@@ -27,7 +27,7 @@ namespace FunctionContextAccessorExample
         {
             this.logger.LogInformation("C# HTTP trigger function processed a request.");
 
-            var greetingResponse = await this.mediator.Send(new GreetingRequest() {  Name = name , FunctionContext = functionContext });
+            var greetingResponse = await this.mediator.Send(new GreetingRequest() {  Name = name  });
 
             var response = req.CreateResponse(HttpStatusCode.OK);
             await response.WriteAsJsonAsync(greetingResponse);
